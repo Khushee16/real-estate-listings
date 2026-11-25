@@ -1,0 +1,36 @@
+/* Haven Homes — custom styles (Bootstrap 5 handles layout) */
+:root{--navy:#14273d;--navy-2:#1e3a56;--teal:#1f7a6d;--sand:#f4efe7;--gold:#c9a24b;--ink:#22303c;}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:#fbfaf7;}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;}
+.navbar{background:rgba(20,39,61,.97);}
+.navbar .nav-link{color:#dbe4ec!important;letter-spacing:.06em;font-size:.88rem;}
+.navbar .nav-link:hover,.navbar .nav-link.active{color:var(--gold)!important;}
+.brand{font-family:'Fraunces',serif;font-size:1.5rem;color:#fff!important;}
+.brand span{color:var(--gold);}
+.btn-teal{background:var(--teal);color:#fff;border:none;padding:.7rem 1.8rem;border-radius:999px;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem;transition:transform .25s,box-shadow .25s;}
+.btn-teal:hover{background:#186257;color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,122,109,.35);}
+.btn-outline-navy{border:1px solid var(--navy);color:var(--navy);border-radius:999px;padding:.6rem 1.6rem;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em;}
+.btn-outline-navy:hover{background:var(--navy);color:#fff;}
+.hero{min-height:78vh;background:linear-gradient(105deg,rgba(20,39,61,.93) 0%,rgba(20,39,61,.55) 55%,rgba(20,39,61,.15) 100%),url('https://picsum.photos/seed/haven-hero/1600/1000') center/cover;display:flex;align-items:center;color:#fff;}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.05;}
+.hero .lead{color:#dbe4ec;max-width:560px;}
+.eyebrow{letter-spacing:.26em;text-transform:uppercase;font-size:.75rem;color:var(--gold);font-weight:600;}
+.section{padding:5rem 0;}
+.section-alt{background:var(--sand);}
+.card-home{border:none;border-radius:1rem;overflow:hidden;box-shadow:0 8px 30px rgba(20,39,61,.10);transition:transform .3s,box-shadow .3s;background:#fff;height:100%;}
+.card-home:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(20,39,61,.18);}
+.card-home img{height:220px;width:100%;object-fit:cover;transition:transform .5s;}
+.card-home:hover img{transform:scale(1.05);}
+.badge-type{position:absolute;top:14px;left:14px;background:var(--navy);color:#fff;font-weight:500;letter-spacing:.05em;}
+.badge-price{position:absolute;top:14px;right:14px;background:var(--gold);color:#fff;font-weight:600;}
+.spec{font-size:.9rem;color:#5a6b7a;}
+.spec strong{color:var(--ink);}
+.gallery-main{border-radius:1rem;height:420px;width:100%;object-fit:cover;}
+.gallery-thumb{border-radius:.6rem;height:90px;width:100%;object-fit:cover;cursor:pointer;opacity:.75;border:2px solid transparent;transition:opacity .2s,border-color .2s;}
+.gallery-thumb:hover,.gallery-thumb.active{opacity:1;border-color:var(--teal);}
+footer{background:var(--navy);color:#c8d4de;}
+footer a{color:#c8d4de;text-decoration:none;}
+footer a:hover{color:var(--gold);}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}

@@ -1,0 +1,244 @@
+// Haven Homes — embedded listing data (fallback when listings.php is unavailable,
+// e.g. on static hosting or file://). The live source is data/listings.json via listings.php.
+window.HAVEN_LISTINGS = [
+  {
+    "id": 1,
+    "title": "Sunlit Colonial on Maple Court",
+    "type": "House",
+    "price": 485000,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2480,
+    "city": "Glassboro",
+    "state": "NJ",
+    "address": "14 Maple Court, Glassboro, NJ 08028",
+    "image": "haven-1",
+    "gallery": [
+      "haven-1",
+      "haven-1b",
+      "haven-1c"
+    ],
+    "description": "A bright four-bedroom colonial with a renovated kitchen, a sun-filled living room and a level backyard made for summer evenings.",
+    "features": [
+      "Renovated kitchen",
+      "Hardwood floors",
+      "Finished basement",
+      "Two-car garage",
+      "Fenced backyard"
+    ],
+    "agent": "Maya Chen",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8840",
+    "agentEmail": "maya@havenhomes.example"
+  },
+  {
+    "id": 2,
+    "title": "Modern Downtown Condo",
+    "type": "Condo",
+    "price": 329000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1180,
+    "city": "Philadelphia",
+    "state": "PA",
+    "address": "220 Market St, Unit 4B, Philadelphia, PA 19106",
+    "image": "haven-2",
+    "gallery": [
+      "haven-2",
+      "haven-2b",
+      "haven-2c"
+    ],
+    "description": "A light, open two-bedroom condo steps from the market district, with floor-to-ceiling windows and a shared rooftop terrace.",
+    "features": [
+      "Rooftop terrace",
+      "In-unit laundry",
+      "Gym access",
+      "Secure entry",
+      "Pet friendly"
+    ],
+    "agent": "Jordan Ellis",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8841",
+    "agentEmail": "jordan@havenhomes.example"
+  },
+  {
+    "id": 3,
+    "title": "Charming Cape Cod near Rowan",
+    "type": "House",
+    "price": 389000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1640,
+    "city": "Glassboro",
+    "state": "NJ",
+    "address": "7 Birchwood Ave, Glassboro, NJ 08028",
+    "image": "haven-3",
+    "gallery": [
+      "haven-3",
+      "haven-3b",
+      "haven-3c"
+    ],
+    "description": "A classic cape cod with a covered porch, updated baths and a quiet street a short walk from campus and downtown.",
+    "features": [
+      "Covered porch",
+      "Updated baths",
+      "New roof (2023)",
+      "Walk to downtown",
+      "Storage shed"
+    ],
+    "agent": "Maya Chen",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8840",
+    "agentEmail": "maya@havenhomes.example"
+  },
+  {
+    "id": 4,
+    "title": "Riverside Townhouse with Deck",
+    "type": "Townhouse",
+    "price": 415000,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 1920,
+    "city": "Pitman",
+    "state": "NJ",
+    "address": "88 Riverbend Ln, Pitman, NJ 08071",
+    "image": "haven-4",
+    "gallery": [
+      "haven-4",
+      "haven-4b",
+      "haven-4c"
+    ],
+    "description": "A three-level townhouse with a river-view deck, a loft office and a finished lower level that works as a guest suite.",
+    "features": [
+      "River-view deck",
+      "Loft office",
+      "Finished lower level",
+      "Community pool",
+      "HOA included lawn care"
+    ],
+    "agent": "Priya Nair",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8842",
+    "agentEmail": "priya@havenhomes.example"
+  },
+  {
+    "id": 5,
+    "title": "Spacious Family Home on Acre Lot",
+    "type": "House",
+    "price": 629000,
+    "beds": 5,
+    "baths": 4,
+    "sqft": 3420,
+    "city": "Washington Township",
+    "state": "NJ",
+    "address": "3 Willow Creek Dr, Washington Township, NJ 08080",
+    "image": "haven-5",
+    "gallery": [
+      "haven-5",
+      "haven-5b",
+      "haven-5c"
+    ],
+    "description": "Five bedrooms on a full acre, with a chef's kitchen, a home theatre room and a pool-ready backyard.",
+    "features": [
+      "One-acre lot",
+      "Chef's kitchen",
+      "Home theatre room",
+      "Pool-ready backyard",
+      "Three-car garage"
+    ],
+    "agent": "Jordan Ellis",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8841",
+    "agentEmail": "jordan@havenhomes.example"
+  },
+  {
+    "id": 6,
+    "title": "Cozy Starter Apartment",
+    "type": "Apartment",
+    "price": 189000,
+    "beds": 1,
+    "baths": 1,
+    "sqft": 720,
+    "city": "Glassboro",
+    "state": "NJ",
+    "address": "410 Delsea Dr, Apt 12, Glassboro, NJ 08028",
+    "image": "haven-6",
+    "gallery": [
+      "haven-6",
+      "haven-6b",
+      "haven-6c"
+    ],
+    "description": "A smart one-bedroom apartment with a modern kitchen and a sunny balcony \u2014 an easy first step into home ownership.",
+    "features": [
+      "Sunny balcony",
+      "Modern kitchen",
+      "Assigned parking",
+      "Laundry on site",
+      "Low HOA"
+    ],
+    "agent": "Priya Nair",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8842",
+    "agentEmail": "priya@havenhomes.example"
+  },
+  {
+    "id": 7,
+    "title": "Elegant Brick Townhouse",
+    "type": "Townhouse",
+    "price": 459000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1780,
+    "city": "Haddonfield",
+    "state": "NJ",
+    "address": "26 Kings Hwy E, Haddonfield, NJ 08033",
+    "image": "haven-7",
+    "gallery": [
+      "haven-7",
+      "haven-7b",
+      "haven-7c"
+    ],
+    "description": "A brick townhouse on a tree-lined street, with a fireplace, a private patio and a short stroll to the shops on Kings Highway.",
+    "features": [
+      "Fireplace",
+      "Private patio",
+      "Walk to shops",
+      "New HVAC (2024)",
+      "Attic storage"
+    ],
+    "agent": "Maya Chen",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8840",
+    "agentEmail": "maya@havenhomes.example"
+  },
+  {
+    "id": 8,
+    "title": "Skyline View Penthouse Condo",
+    "type": "Condo",
+    "price": 875000,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 2150,
+    "city": "Philadelphia",
+    "state": "PA",
+    "address": "1500 Locust St, PH 2, Philadelphia, PA 19102",
+    "image": "haven-8",
+    "gallery": [
+      "haven-8",
+      "haven-8b",
+      "haven-8c"
+    ],
+    "description": "A top-floor condo with skyline views, a wraparound terrace and interiors finished to a quiet, hotel-like standard.",
+    "features": [
+      "Skyline views",
+      "Wraparound terrace",
+      "Concierge",
+      "Two parking spaces",
+      "Wine fridge"
+    ],
+    "agent": "Jordan Ellis",
+    "agentRole": "Listing Agent",
+    "agentPhone": "(555) 210-8841",
+    "agentEmail": "jordan@havenhomes.example"
+  }
+];
