@@ -10,13 +10,14 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
     <a class="navbar-brand brand" href="index.html">Haven <span>Homes</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
       </ul>
     </div>
@@ -32,9 +33,12 @@
       <a class="btn btn-teal me-2" href="listings.html">Browse all homes</a>
       <a class="btn btn-outline-light rounded-pill px-4 py-2" href="#featured">Featured homes</a>
     </div>
+    <p class="reveal"><span class="hero-note">Fictional demo listings across South Jersey &amp; Philadelphia — no real homes are sold</span></p>
+    <a class="scroll-cue reveal" href="#featured">See featured homes <span class="cue-arrow" aria-hidden="true">↓</span></a>
   </div>
 </header>
 
+<main id="main">
 <section class="section" id="featured">
   <div class="container">
     <div class="d-flex justify-content-between align-items-end mb-4 reveal">
@@ -42,7 +46,8 @@
       <a href="listings.html" class="btn btn-outline-navy d-none d-md-inline-block">View all</a>
     </div>
     <div id="demo-note"></div>
-    <div class="row g-4" id="featured-listings"><div class="col-12"><p class="text-muted">Loading homes…</p></div></div>
+    <div class="row g-4" id="featured-listings" aria-busy="true"><p class="visually-hidden" role="status">Loading homes…</p><div class="col-md-6 col-lg-4" aria-hidden="true"><div class="skeleton-card"><div class="skeleton-block skeleton-img"></div><div class="skeleton-block skeleton-line"></div><div class="skeleton-block skeleton-line short"></div></div></div><div class="col-md-6 col-lg-4" aria-hidden="true"><div class="skeleton-card"><div class="skeleton-block skeleton-img"></div><div class="skeleton-block skeleton-line"></div><div class="skeleton-block skeleton-line short"></div></div></div><div class="col-md-6 col-lg-4" aria-hidden="true"><div class="skeleton-card"><div class="skeleton-block skeleton-img"></div><div class="skeleton-block skeleton-line"></div><div class="skeleton-block skeleton-line short"></div></div></div></div>
+    <div class="text-center mt-4 d-md-none"><a href="listings.html" class="btn btn-outline-navy">View all homes</a></div>
   </div>
 </section>
 
@@ -50,12 +55,13 @@
   <div class="container">
     <div class="text-center mb-5 reveal"><p class="eyebrow">How it works</p><h2>Three steps to your front door</h2></div>
     <div class="row g-4 text-center">
-      <div class="col-md-4 reveal"><div class="card card-luxe p-4 h-100"><h3 class="h4" style="color:var(--teal)">1 · Search</h3><p class="text-muted mb-0">Filter by place, price, type and bedrooms until a shortlist appears.</p></div></div>
-      <div class="col-md-4 reveal"><div class="card card-luxe p-4 h-100"><h3 class="h4" style="color:var(--teal)">2 · Tour</h3><p class="text-muted mb-0">Message the listing agent from the property page to book a viewing.</p></div></div>
-      <div class="col-md-4 reveal"><div class="card card-luxe p-4 h-100"><h3 class="h4" style="color:var(--teal)">3 · Move in</h3><p class="text-muted mb-0">Offer, paperwork and keys — your agent walks with you the whole way.</p></div></div>
+      <div class="col-md-4 reveal"><div class="card step-card p-4 h-100"><h3 class="h4" style="color:var(--teal)">1 · Search</h3><p class="text-muted mb-0">Filter by place, price, type and bedrooms until a shortlist appears.</p></div></div>
+      <div class="col-md-4 reveal"><div class="card step-card p-4 h-100"><h3 class="h4" style="color:var(--teal)">2 · Tour</h3><p class="text-muted mb-0">Message the listing agent from the property page to book a viewing.</p></div></div>
+      <div class="col-md-4 reveal"><div class="card step-card p-4 h-100"><h3 class="h4" style="color:var(--teal)">3 · Move in</h3><p class="text-muted mb-0">Offer, paperwork and keys — your agent walks with you the whole way.</p></div></div>
     </div>
   </div>
 </section>
+</main>
 
 <footer class="py-5">
   <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
